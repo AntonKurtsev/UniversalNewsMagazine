@@ -4,15 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Universal - News Magazine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
-    <div class="header__top"></div>
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top__wrapper">
+          <div class="header-top__sections sections">
+            <button class="sections__menu-button">
+              <img src="img/icons/menu-btn.svg" alt="Menu button">
+            </button>
+            <span class="sections__text">Sections</span>
+          </div>
+          <!-- /.header-top__sections -->
+          <div class="header-top__search search">
+            <form action="#" class="search__form">
+              <button class="search__button">
+                <img src="img/icons/search-header.svg" alt="Search button" class="search__icon">
+              </button>
+              <input class="search__input" type="text" placeholder="Search">
+            </form>
+          </div>
+          <!-- /.header-top__search -->
+          <div class="header-top__photo photo">
+            <div class="photo__bg">
+              <img src="img/header-img/article-img" alt="Article image" class="photo__image">
+            </div>
+            <!-- /.header-top__bg -->
+          </div>
+          <!-- /.header-top__photo -->
+          <div class="header-top__subscribe subscribe">
+            <a href="#" class="subscribe__link">Subscribe Now</a>
+            <span class="subscribe__terms">3 month for $19</span>
+          </div>
+          <!-- /.heder-top__subscribe -->
+          <div class="header-top__sign-up sign-up">
+            <div class="sign-up__icon-wrapper">
+              <img src="img/icons/man-header.svg" alt="Avatar icon" class="sign-up__icon">
+            </div>
+            <a href="#" class="sign-up__link">Sign In</a>
+          </div>
+          <!-- /.header-top__sign-up -->
+        </div>
+        <!-- /.header-top__wrapper -->
+      </div>
+      <!-- /.container -->
+    </div>
     <!-- /.header__top -->
-    <div class="header__main"></div>
+    <div class="header-main"></div>
     <!-- /.header__main -->
-    <div class="header__bottom"></div>
+    <div class="header-bottom"></div>
     <!-- /.header__bottom -->
   </header>
 </body>
