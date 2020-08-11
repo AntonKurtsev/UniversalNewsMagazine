@@ -1,6 +1,4 @@
 .header
-  &__logo
-    margin: 0 auto
   &-top
     &__wrapper
       display: flex
@@ -40,13 +38,18 @@
       margin-left: 30px
     &__text
       margin-left: 15px
+      margin-right: auto
       font-style: normal
       font-weight: normal
       font-size: 14px
       line-height: 20px
       color: #4B5157
+    &__link
+      justify-self: center
+      text-decoration: none
     &__date
       margin-right: 60px
+      margin-left: 186px
       font-style: normal
       font-weight: normal
       font-size: 14px
@@ -55,6 +58,27 @@
     &__weather
       display: flex
       align-items: center
+  &-bottom
+    background-color: #262D33
+  &-menu
+    padding: 17px 0 18px
+    &__list
+      padding: 0
+      margin: 0
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &__item
+      list-style: none
+      padding: 0
+      margin: 0
+    &__link
+      text-decoration: none
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #FFFFFF
 .sections
   &__menu
     &-button
