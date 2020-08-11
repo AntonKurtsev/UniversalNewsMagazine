@@ -4,10 +4,13 @@
     border-radius: 10px
     overflow: hidden
     display: grid
-    grid-template-columns: repeat(4, 1fr)
-  &-tabs
-    &__content
-      grid-column: span 3
+    grid-template-columns: repeat(3, 1fr) 30px 1fr
+    grid-template-rows: 60px repeat(6, 1fr)
+    background-color: #ffffff
+  &__tabs
+    &-content
+      grid-column: span 4
+      grid-row: span 7
       padding: 55px 0 95px 55px
       height: 570px
       background-image: url(../img/tabs-bg-1.png)
@@ -76,6 +79,70 @@
       font-size: 12px
       line-height: 15px
       color: rgba(255, 255, 255, 0.4)
+  &-menu
+    &__title
+      padding: 20px 25px 19px 20px
+      background-color: #ffffff
+      margin: 0
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: #262D33
+    &__item
+      padding: 17px 25px 19px
+      background-color: #ffffff
+      border-bottom: 1px solid #D9DADB
+      cursor: pointer
+      &:last-child
+        border: none
+      &--active
+        position: relative
+        background-color: #F5F5F5
+        &::before
+          content: ''
+          position: absolute
+          transform: translateY(50%)
+          left: -22px
+          bottom: 50%
+          border: 12px solid transparent
+          border-right: 10px solid #F5F5F5
+    &__category
+      display: block
+      margin-bottom: 8px
+      font-weight: 700
+      font-size: 12px
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      &--food
+        color: #3BBDC4
+      &--cars
+        color: #6E99AE
+      &--movies
+        color: #AC8EE3
+      &--nfl
+        color: #FFA34D
+      &--tech
+        color: #3DC47E
+    &__descr
+      margin: 0
+      display: inline-block
+      max-width: 200px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+    &__link
+      width: 20px
+      display: inline-flex
+      align-items: center
+      height: 20px
+      justify-content: center
+      border: 1px solid #BCBFC2
+      border-radius: 50%
+      margin-left: 6px
 .video
   &-info
     &__play
