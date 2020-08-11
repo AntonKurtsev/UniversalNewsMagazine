@@ -1,0 +1,42 @@
+@media (max-width: 992px)
+  .container
+    max-width: 730px
+  .header
+    &-main
+      &__text
+        display: none
+      &__link
+        margin: 0 auto
+      &__date
+        align-self: flex-start
+        margin: 15px -72px 0 0
+      &__weather
+        align-self: flex-end
+        margin: 0 0 15px 0
+    &-menu
+      display: none
+      &--mobile
+        &-visible
+          background-color: rgba(38, 45, 51, 0.9)
+          position: fixed
+          top: 50px
+          left: 0
+          width: 30%
+          height: 100%
+          z-index: 3
+          display: flex
+          justify-content: center
+      &__list
+        &--mobile
+          &-visible
+            display: flex
+            flex-direction: column
+            overflow-y: scroll
+      &__item
+        margin-bottom: 15px
+  .latest
+    &-articles
+      margin-top: 134px
+      &__text
+        &:hover
+          text-decoration: none
