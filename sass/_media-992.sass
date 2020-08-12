@@ -40,3 +40,48 @@
       &__text
         &:hover
           text-decoration: none
+  .recomended
+    &-wrapper
+      grid-template-columns: repeat(5, 1fr)
+      grid-template-rows: 40px minmax(55px, auto) min-content
+    &__tabs
+      &-content
+        min-height: 300px
+        grid-column: span 5
+        grid-row: 3 / 4
+  .tabs
+    &-menu
+      grid-column: 1 / 6
+      grid-row: 1 / 2
+      display: flex
+      flex-wrap: wrap
+      &__title
+        padding: 15px 20px
+        flex-basis: 100%
+        flex-shrink: 0
+      &__item
+        flex-basis: 20%
+        padding: 15px 0
+        border: none
+        border-right: 1px solid #D9DADB
+        border-top: 1px solid #D9DADB
+        border-radius: 10px 10px 0 0
+        &:last-child
+          border-right: none
+          border-top: 1px solid #D9DADB
+          border-radius: 10px 10px 0 0
+        &--active
+          &::before
+            content: ''
+            position: absolute
+            transform: translateX(-50%)
+            left: 50%
+            bottom: -22px
+            border: 12px solid transparent
+            border-top: 10px solid #F5F5F5
+      &__descr
+        display: none
+        padding: 8px
+      &__category
+        margin: 0
+        text-align: center
