@@ -13,9 +13,22 @@
       grid-row: span 7
       padding: 55px 0 95px 55px
       height: 570px
-      background-image: url(../img/tabs-bg-1.png)
+      display: none
+      &--active
+        display: block
 .tabs
   &-content
+    background-size: cover
+    &--food
+      background-image: url(../img/tabs-bg-1.png)
+    &--cars
+      background-image: url(../img/tabs-bg-2.jpg)
+    &--movies
+      background-image: url(../img/tabs-bg-3.jpg)
+    &--nfl
+      background-image: url(../img/tabs-bg-4.jpg)
+    &--tech
+      background-image: url(../img/tabs-bg-5.jpg)
     &__author
       display: flex
       align-items: center
@@ -84,6 +97,7 @@
       padding: 20px 25px 19px 20px
       background-color: #ffffff
       margin: 0
+      font-weight: 900
       font-size: 14px
       line-height: 20px
       letter-spacing: 0.5px
