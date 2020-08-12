@@ -61,40 +61,40 @@
     &-menu
       &__title
         padding: 10px 20px
-.articles
-  &-cards
-    &__wrapper
-      grid-template-rows: repeat(5, minmax(170px, min-content))
-      grid-gap: 20px
-.article
-  &-card
-    &--horizontal
-      grid-column: 1 / 4
-      grid-row: 2 / 3
-    &--vertical
-      &-bg
-        grid-column: 1 / 3
-        grid-row: 3 / 4
-      &-half
-        grid-column: 2 / 4
-        grid-row: 4 / 6
-    &--invisible
-      display: none
-.vertical
-  &-bg
+  .articles
+    &-cards
+      &__wrapper
+        grid-template-rows: repeat(5, minmax(170px, min-content))
+        grid-gap: 20px
+  .article
     &-card
-      &__label
-        left: 10px
-      &__title
-        margin-top: 15px
-  &-half
+      &--horizontal
+        grid-column: 1 / 4
+        grid-row: 2 / 3
+      &--vertical
+        &-bg
+          grid-column: 1 / 3
+          grid-row: 3 / 4
+        &-half
+          grid-column: 2 / 4
+          grid-row: 4 / 6
+      &--invisible
+        display: none
+  .vertical
+    &-bg
+      &-card
+        &__label
+          left: 10px
+        &__title
+          margin-top: 15px
+    &-half
+      &-card
+        &__title
+          padding: 0 25px 25px 25px
+  .article
     &-card
-      &__title
-        padding: 0 25px 25px 25px
-.article
-  &-card
-    &--horizontal
-      background-position: right center
-.columns
-  grid-column: 1 / 4
-  grid-row: 1 
+      &--horizontal
+        background-position: right center
+  .columns
+    grid-column: 1 / 4
+    grid-row: 1 

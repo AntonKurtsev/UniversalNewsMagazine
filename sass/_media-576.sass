@@ -68,3 +68,26 @@
         padding: 8px 20px
       &__category
         font-size: 11px
+  .articles
+    &-cards
+      &__wrapper
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(10, minmax(170px, min-content))
+        grid-gap: 15px
+  .article
+    &-card
+      &--horizontal
+        grid-column: 1 / 3
+        background-image: none
+      &--vertical
+        &-bg
+          grid-row: 4 / 6
+        &-half
+          grid-column: 1 / 3  
+          grid-row: 8 / 10
+      &--common
+        grid-column: 1 / 3
+      &--invisible
+        display: block
+  .columns
+    grid-column: 1 / 3
