@@ -17,4 +17,6 @@ $(document).ready(function () {
 
   $(".fancybox").fancybox();
 
+  $('.parallax-window').parallax({imageSrc: '../img/parallax-bg.png'});
+
 });
