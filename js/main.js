@@ -14,4 +14,7 @@ $(document).ready(function () {
     tabsContent.removeClass('recomended__tabs-content--active');
     $('#' + activeContent).addClass('recomended__tabs-content--active');
   })
+
+  $(".fancybox").fancybox();
+
 });
