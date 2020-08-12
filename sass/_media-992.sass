@@ -85,3 +85,41 @@
       &__category
         margin: 0
         text-align: center
+  .articles
+    &-cards
+      &__wrapper
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: repeat(6, minmax(170px, min-content))
+  .article
+    &-card
+      &--vertical
+        &-bg
+          grid-column: 1 / 2
+          grid-row: 3 / 4
+          padding-top: 10px
+        &-half
+          grid-column: 2 / 3
+          grid-row: 4 / 5
+          grid-template-rows: repeat(4, 1fr)
+  .vertical
+    &-bg
+      &-card
+        &__title
+          margin-top: 45px
+        &__label
+          top: 10px
+          left: 137px
+    &-half
+      &-card
+        &__bg
+          grid-row: 1 / 4
+        &__title
+          grid-row: 4 / 5
+          margin: 0
+          align-items: flex-end
+          padding-bottom: 5px
+          padding-right: 10px
+          padding-left: 10px
+  .columns
+    grid-column: 3 / 4
+    grid-row: 1 / 5
