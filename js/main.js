@@ -19,4 +19,8 @@ $(document).ready(function () {
 
   $('.parallax-window').parallax({imageSrc: 'img/parallax-bg.png'});
 
+  $('.categories-cards__flag').on('click', function () { 
+    $(this).toggleClass('categories-cards__flag--checked');
+   })
+
 });

@@ -1,7 +1,7 @@
 .articles
   &-cards
     padding: 30px 0 60px 0
-    &__wrapper
+    &-wrapper
       display: grid
       grid-template-columns: repeat(4, 1fr)
       grid-template-rows: repeat(4, minmax(170px, min-content))
@@ -101,16 +101,17 @@
       overflow: hidden
       text-overflow: ellipsis
     &__icon
-      width: 15px
-      height: 15px
+      min-width: 15px
+      min-height: 15px
       margin-left: 15px
       margin-right: 5px
+      fill:  #BCBFC2
     &__count
       font-style: normal
       font-weight: normal
       font-size: 12px
       line-height: 15px
-      color: #939699
+      color:  #BCBFC2
 .vertical
   &-bg
     &-card
@@ -192,28 +193,14 @@
       color: rgba(255, 255, 255, 0.851)
     &__date
       margin-right: 10px
-      font-style: normal
-      font-weight: normal
-      font-size: 12px
-      line-height: 15px
-      color: rgba(255, 255, 255, 0.4)
     &__comments
       margin-right: 10px
-      display: flex
-      align-items: center
     &__message
       margin-right: 5px
-    &__count
-      font-style: normal
-      font-weight: normal
-      font-size: 12px
-      line-height: 15px
-      color: rgba(255, 255, 255, 0.4)
-    &__likes
-      display: flex
-      align-items: center
+      fill: rgba(255, 255, 255, 0.4)
     &__like
       margin-right: 5px
+      fill: rgba(255, 255, 255, 0.4)
 .common
   &-card
     &__title

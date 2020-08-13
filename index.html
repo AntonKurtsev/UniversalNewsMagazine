@@ -29,7 +29,7 @@
   <header class="header">
     <div class="header-top">
       <div class="container">
-        <div class="header-top__wrapper">
+        <div class="header-top-wrapper">
           <div class="header-top__sections sections">
             <button class="sections__menu-button">
               <img src="img/icons/menu-btn.svg" alt="Menu button">
@@ -144,7 +144,7 @@
 
   <div class="latest-articles">
     <div class="container">
-      <div class="latest-articles__wrapper">
+      <div class="latest-articles-wrapper">
         <div class="latest-articles__card">
           <a href="#" class="latest-articles__text">25 Songs That Tell Us&nbsp;Where Music Is&nbsp;Going</a>
           <div class="latest-articles__image-wrapper">
@@ -346,7 +346,7 @@
 
   <section class="articles-cards">
     <div class="container">
-      <div class="articles-cards__wrapper">
+      <div class="articles-cards-wrapper">
         <div class="article-card article-card--horizontal horizontal-card">
           <span class="horizontal-card__category">cars</span>
           <h3 class="horizontal-card__title"><a href="#" class="link">The joy of replicas: A $ 5 million car for $ 50,000</a></h3>
@@ -357,7 +357,9 @@
             <img src="img/horizontal-comments-avatar-1.png" alt="Jessica Miller" class="horizontal-comments__avatar">
             <span class="horizontal-comments__name">Jessica Miller:</span>
             <span class="horizontal-comments__text"> Even as the ride-hailing service’s future rememdgsfgdfgdfg</span>
-            <img src="img/icons/horizontal-comments-icon.svg" alt="Comment" class="horizontal-comments__icon">
+            <svg class="icon horizontal-comments__icon comment-icon">
+              <use xlink:href="img/icons/sprite.svg#message-icon"></use>
+            </svg>
             <span class="horizontal-comments__count">342</span>
           </div>
           <!-- /.horizontal__comments -->
@@ -370,16 +372,20 @@
             <img src="img/horizontal-comments-avatar-1.png" alt="Sarah Jenkins" class="card-author__avatar">
             <div class="card-author__info">
               <span class="card-author__name">By Sarah Jenkins</span>
-              <span class="card-author__date">Sept 26</span>
+              <span class="card-author__date date">Sept 26</span>
               <!-- /.card-author__date -->
-              <div class="card-author__comments">
-                <img src="img/icons/vertical-card-bg-comment.svg" alt="Comment icon" class="card-author__message">
-                <span class="card-author__count">16</span>
+              <div class="card-author__comments comment-block">
+                <svg class="icon card-author__message comment-icon">
+                  <use xlink:href="img/icons/sprite.svg#message-icon"></use>
+                </svg>
+                <span class="card-author__count comment-count">16</span>
               </div>
               <!-- /.card-author__comments -->
-              <div class="card-author__likes">
-                <img src="img/icons/like-icon.svg" alt="Like icon" class="card-author__like">
-                <span class="card-author__count">832</span>
+              <div class="card-author__likes like-block">
+                <svg class="icon card-author__like like-icon">
+                  <use xlink:href="img/icons/sprite.svg#like-icon"></use>
+                </svg>
+                <span class="card-author__count like-count">832</span>
               </div>
               <!-- /.card-author__likes -->
             </div>
@@ -480,7 +486,224 @@
       </a>
   </div>
 
-  section.
+  <section class="articles-categories">
+    <div class="container">
+      <div class="articles-categories-wrapper">
+        <div class="articles-categories__cards categories-cards">
+          <div class="categories-cards__item">
+            <div class="categories-cards__image">
+              <img src="img/categories-cards-img-1.jpg" alt="Photo" class="categories-cards__img">
+            </div>
+            <!-- /.categories-cards__image -->
+            <div class="categories-cards__content">
+              <span class="categories-cards__category categories-cards__category--flights">Flights</span>
+              <h4 class="categories-cards__title"><a href="#" class="link">Passengers Suffer as Crowded Field Puts Pressure on Europe’s Airlines</a></h4>
+              <p class="categories-cards__text">Weaker carriers have fallen by the wayside amid fierce competition, while others have been hit by bad luck. The result: thousands of canceled flights.</p>
+              <div class="categories-cards__data">
+                <span class="categories-cards__date date">Aug 6</span>
+                <div class="categories-cards__comment comment-block">
+                  <svg class="icon categories-cards__message comment-icon">
+                    <use xlink:href="img/icons/sprite.svg#message-icon"></use>
+                  </svg>
+                  <span class="categories-cards__count comment-count">342</span>
+                </div>
+                <!-- /.categories-cards__comment -->
+                <div class="categories-cards__likes like-block">
+                  <svg class="icon categories-cards__like like-icon">
+                    <use xlink:href="img/icons/sprite.svg#like-icon"></use>
+                  </svg>
+                  <span class="categories-cards__count like-count">830</span>
+                </div>
+                <!-- /.categories-cards__like -->
+              </div>
+              <!-- /.categories-cards__data -->
+              <svg class="icon categories-cards__flag">
+                <use xlink:href="img/icons/sprite.svg#flag-icon"></use>
+              </svg>
+            </div>
+            <!-- /.categories-cards__content -->
+          </div>
+          <!-- /.categories-cards__item -->
+          <div class="categories-cards__item">
+            <div class="categories-cards__image">
+              <img src="img/categories-cards-img-2.jpg" alt="Photo" class="categories-cards__img">
+            </div>
+            <!-- /.categories-cards__image -->
+            <div class="categories-cards__content">
+              <span class="categories-cards__category categories-cards__category--food">Food</span>
+              <h4 class="categories-cards__title"><a href="#" class="link">Three Courses, 20 Euros: The Affordable Dining Renaissance in Paris</a></h4>
+              <p class="categories-cards__text">The Los Angeles area, for all of its culinary diversity, has not historically been thought of as a haven for bread lovers. The area has a reputation as a place where gluten fears to tread.</p>
+              <div class="categories-cards__data">
+                <span class="categories-cards__date date">Oct 7</span>
+                <div class="categories-cards__comment comment-block">
+                  <svg class="icon categories-cards__message comment-icon">
+                    <use xlink:href="img/icons/sprite.svg#message-icon"></use>
+                  </svg>
+                  <span class="categories-cards__count comment-count">27</span>
+                </div>
+                <!-- /.categories-cards__comment -->
+                <div class="categories-cards__likes like-block">
+                  <svg class="icon categories-cards__like like-icon">
+                    <use xlink:href="img/icons/sprite.svg#like-icon"></use>
+                  </svg>
+                  <span class="categories-cards__count like-count">129</span>
+                </div>
+                <!-- /.categories-cards__like -->
+              </div>
+              <!-- /.categories-cards__data -->
+              <svg class="icon categories-cards__flag">
+                <use xlink:href="img/icons/sprite.svg#flag-icon"></use>
+              </svg>
+            </div>
+            <!-- /.categories-cards__content -->
+          </div>
+          <!-- /.categories-cards__item -->
+          <div class="categories-cards__item">
+            <div class="categories-cards__image">
+              <img src="img/categories-cards-img-3.jpg" alt="Photo" class="categories-cards__img">
+            </div>
+            <!-- /.categories-cards__image -->
+            <div class="categories-cards__content">
+              <span class="categories-cards__category categories-cards__category--science">Science</span>
+              <h4 class="categories-cards__title"><a href="#" class="link">Watch the High-Flying Physics of a Plant’s Exploding Fruits</a></h4>
+              <p class="categories-cards__text">Three undergradute physics majors and their professor worked out how the hairyflower wild petunia shoots tiny seeds more than 20 feet through the air</p>
+              <div class="categories-cards__data">
+                <span class="categories-cards__date date">Oct 11</span>
+                <div class="categories-cards__comment comment-block">
+                  <svg class="icon categories-cards__message comment-icon">
+                    <use xlink:href="img/icons/sprite.svg#message-icon"></use>
+                  </svg>
+                  <span class="categories-cards__count comment-count">30</span>
+                </div>
+                <!-- /.categories-cards__comment -->
+                <div class="categories-cards__likes like-block">
+                  <svg class="icon categories-cards__like like-icon">
+                    <use xlink:href="img/icons/sprite.svg#like-icon"></use>
+                  </svg>
+                  <span class="categories-cards__count like-count">284</span>
+                </div>
+                <!-- /.categories-cards__like -->
+              </div>
+              <!-- /.categories-cards__data -->
+              <svg class="icon categories-cards__flag">
+                <use xlink:href="img/icons/sprite.svg#flag-icon"></use>
+              </svg>
+            </div>
+            <!-- /.categories-cards__content -->
+          </div>
+          <!-- /.categories-cards__item -->
+          <div class="categories-cards__item">
+            <div class="categories-cards__image">
+              <img src="img/categories-cards-img-4.jpg" alt="Photo" class="categories-cards__img">
+            </div>
+            <!-- /.categories-cards__image -->
+            <div class="categories-cards__content">
+              <span class="categories-cards__category categories-cards__category--health">Health</span>
+              <h4 class="categories-cards__title"><a href="#" class="link">How the Shape of Your Ears Affects What You Hear</a></h4>
+              <p class="categories-cards__text">We’re able to locate sound because our brains grasp the shape of our ears. When that shape changes, we need time and practice to adapt. Ears are a peculiarly individual piece of anatomy.</p>
+              <div class="categories-cards__data">
+                <span class="categories-cards__date date">Oct 19</span>
+                <div class="categories-cards__comment comment-block">
+                  <svg class="icon categories-cards__message comment-icon">
+                    <use xlink:href="img/icons/sprite.svg#message-icon"></use>
+                  </svg>
+                  <span class="categories-cards__count comment-count">102</span>
+                </div>
+                <!-- /.categories-cards__comment -->
+                <div class="categories-cards__likes like-block">
+                  <svg class="icon categories-cards__like like-icon">
+                    <use xlink:href="img/icons/sprite.svg#like-icon"></use>
+                  </svg>
+                  <span class="categories-cards__count like-count">1,293</span>
+                </div>
+                <!-- /.categories-cards__like -->
+              </div>
+              <!-- /.categories-cards__data -->
+              <svg class="icon categories-cards__flag">
+                <use xlink:href="img/icons/sprite.svg#flag-icon"></use>
+              </svg>
+            </div>
+            <!-- /.categories-cards__content -->
+          </div>
+          <!-- /.categories-cards__item -->
+          <div class="categories-cards__item">
+            <div class="categories-cards__image">
+              <img src="img/categories-cards-img-5.jpg" alt="Photo" class="categories-cards__img">
+            </div>
+            <!-- /.categories-cards__image -->
+            <div class="categories-cards__content">
+              <span class="categories-cards__category categories-cards__category--science">Science</span>
+              <h4 class="categories-cards__title"><a href="#" class="link">Forests Protect the Climate. A Future With More Storms Would Mean Trouble.</a></h4>
+              <p class="categories-cards__text">With an increase in extreme weather expected in the years to come, forests could be changed permanently as the world continues to warm</p>
+              <div class="categories-cards__data">
+                <span class="categories-cards__date date">Oct 22</span>
+                <div class="categories-cards__comment comment-block">
+                  <svg class="icon categories-cards__message comment-icon">
+                    <use xlink:href="img/icons/sprite.svg#message-icon"></use>
+                  </svg>
+                  <span class="categories-cards__count comment-count">5</span>
+                </div>
+                <!-- /.categories-cards__comment -->
+                <div class="categories-cards__likes like-block">
+                  <svg class="icon categories-cards__like like-icon">
+                    <use xlink:href="img/icons/sprite.svg#like-icon"></use>
+                  </svg>
+                  <span class="categories-cards__count like-count">82</span>
+                </div>
+                <!-- /.categories-cards__like -->
+              </div>
+              <!-- /.categories-cards__data -->
+              <svg class="icon categories-cards__flag">
+                <use xlink:href="img/icons/sprite.svg#flag-icon"></use>
+              </svg>
+            </div>
+            <!-- /.categories-cards__content -->
+          </div>
+          <!-- /.categories-cards__item -->
+          <div class="categories-cards__item">
+            <div class="categories-cards__image">
+              <img src="img/categories-cards-img-6.jpg" alt="Photo" class="categories-cards__img">
+            </div>
+            <!-- /.categories-cards__image -->
+            <div class="categories-cards__content">
+              <span class="categories-cards__category categories-cards__category--design">Art & Design</span>
+              <h4 class="categories-cards__title"><a href="#" class="link">New Contemporary Institute Reverberates in Richmond’s Historic Landscape</a></h4>
+              <p class="categories-cards__text">The center, which will open in April, takes a bold look at race and other social issues that still resonate in the region as well as the nation. A new Institute for Contemporary Art is set to open.</p>
+              <div class="categories-cards__data">
+                <span class="categories-cards__date date">Oct 26</span>
+                <div class="categories-cards__comment comment-block">
+                  <svg class="icon categories-cards__message comment-icon">
+                    <use xlink:href="img/icons/sprite.svg#message-icon"></use>
+                  </svg>
+                  <span class="categories-cards__count comment-count">101</span>
+                </div>
+                <!-- /.categories-cards__comment -->
+                <div class="categories-cards__likes like-block">
+                  <svg class="icon categories-cards__like like-icon">
+                    <use xlink:href="img/icons/sprite.svg#like-icon"></use>
+                  </svg>
+                  <span class="categories-cards__count like-count">432</span>
+                </div>
+                <!-- /.categories-cards__like -->
+              </div>
+              <!-- /.categories-cards__data -->
+              <svg class="icon categories-cards__flag">
+                <use xlink:href="img/icons/sprite.svg#flag-icon"></use>
+              </svg>
+            </div>
+            <!-- /.categories-cards__content -->
+          </div>
+          <!-- /.categories-cards__item -->
+          
+        </div>
+        <!-- /.articles-categories__cards -->
+        <div class="articles-categories__recomended articles-recomended"></div>
+        <!-- /.articles-categories__recomended -->
+      </div>
+      <!-- /.articles-categories-wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
   
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>

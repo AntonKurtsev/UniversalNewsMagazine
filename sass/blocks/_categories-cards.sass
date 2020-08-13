@@ -1,0 +1,96 @@
+.articles
+  &-categories
+    padding: 60px 0
+    &-wrapper
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      grid-gap: 30px
+.categories
+  &-cards
+    grid-column: 1 / 4
+    background-color: #ffffff
+    border-radius: 10px
+    padding: 0 25px
+    &__item
+      position: relative
+      padding: 25px 0
+      display: flex
+      align-items: flex-start
+      flex-wrap: nowrap
+      border-bottom: 1px solid #D9DADB
+      &:last-child
+        border-bottom: none
+    &__image
+      margin-right: 25px
+      max-width: 336px
+      height: 195px
+    &__img
+      min-width: 100%
+      height: 100%
+      overflow: hidden
+      object-fit: cover
+    &__content
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-start
+      min-height: 185px
+      padding-top: 5px
+    &__category
+      font-size: 12px
+      font-weight: 500
+      line-height: 15px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      &--flights
+        color: #4592FF
+      &--food
+        color: #3BBDC4
+      &--science
+        color: #FF4F52
+      &--health
+        color: #3BBDC4
+      &--design
+        color: #AC8EE3
+    &__title
+      margin: 0
+      font-family: Roboto Slab, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: #262D33
+    &__text
+      margin: 0
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+    &__data
+      display: flex
+      align-items: center
+    &__date
+      color: #939699
+      margin-right: 10px
+    &__comment
+      margin-right: 10px
+    &__message
+      margin-right: 5px
+      fill: #BCBFC2
+    &__like
+      margin-right: 5px
+      fill: #BCBFC2
+    &__count
+      color: #939699
+    &__flag
+      position: absolute
+      top: 25px
+      right: 0
+      width: 14px
+      height: 18px
+      fill: #BCBFC2
+      cursor: pointer
+      &--checked
+        width: 14px
+        height: 18px
+        fill: #FF4F52
