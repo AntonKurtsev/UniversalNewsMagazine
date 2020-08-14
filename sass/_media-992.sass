@@ -93,6 +93,7 @@
       &-wrapper
         grid-template-columns: repeat(3, 1fr)
         grid-template-rows: repeat(5, minmax(170px, min-content))
+        grid-gap: 20px
   .article
     &-card
       &--vertical
@@ -126,3 +127,32 @@
   .columns
     grid-column: 3 / 4
     grid-row: 1 / 5
+  .articles
+    &-categories
+      &-wrapper
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: minmax(894px, min-content)
+        grid-gap: 20px
+  .categories
+    &-cards
+      grid-column: 1 / 3
+      &__item
+        flex-direction: column
+      &__content
+        max-width: 390px
+      &__image
+        margin-right: 0
+        margin-bottom: 10px
+      &__img
+        width: 410px
+      &__flag
+        top: 233px
+    &-recomended
+      grid-column: 3 / 4
+  .recomended
+    &-cards
+      &__item
+        align-items: flex-start
+      &__image
+        display: block
+      

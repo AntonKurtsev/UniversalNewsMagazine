@@ -104,3 +104,43 @@
         padding: 0 15px
         font-size: 34px
         line-height: 44px
+  .articles
+    &-categories
+      &-wrapper
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: min-content
+        grid-gap: 20px
+  .categories
+    &-cards
+      grid-column: 1 / 4
+      grid-row: 2
+      &__item
+        flex-direction: row
+      &__image
+        margin-right: 15px
+        margin-bottom: 0
+      &__img
+        width: 150px
+      &__title
+        margin-top: 5px
+        margin-bottom: 10px
+        font-size: 17px
+      &__text
+        margin-bottom: 5px
+      &__flag
+        top: 25px
+    &-recomended
+      grid-column: 1 / 4
+      grid-row: 1
+      &__title
+        font-size: 14px
+  .recomended
+    &-cards
+      &__image
+        margin-right: 20px
+      &__img
+        width: 90px
+        height: 90px
+      &__title
+        font-size: 16px
+        margin-bottom: 15px
