@@ -17,7 +17,7 @@ $(document).ready(function () {
 
   $(".fancybox").fancybox();
 
-  $('.parallax-window').parallax({imageSrc: 'img/parallax-bg.png'});
+  $('.parallax-window').parallax({imageSrc: 'img/parallax-bg.jpg'});
 
   $('.categories-cards__flag').on('click', function () { 
     $(this).toggleClass('categories-cards__flag--checked');
