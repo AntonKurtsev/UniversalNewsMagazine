@@ -23,6 +23,7 @@
   <meta name="theme-color" content="#ffffff">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,900&family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -369,7 +370,7 @@
           <span class="vertical-bg-card__category">Art & Design</span>
           <h3 class="vertical-bg-card__title"><a href="#" class="link">Invisible ink: the weird world of tattoo removal – in pictures</a></h3>
           <div class="vertical-bg-card__author card-author">
-            <img src="img/horizontal-comments-avatar-1.png" alt="Sarah Jenkins" class="card-author__avatar">
+            <img src="img/horizontal-comments-avatar-1.jpg" alt="Sarah Jenkins" class="card-author__avatar">
             <div class="card-author__info">
               <span class="card-author__name">By Sarah Jenkins</span>
               <span class="card-author__date date">Sept 26</span>
@@ -822,10 +823,87 @@
     </div>
     <!-- /.container -->
   </section>
+
+  <section class="articles-slider">
+    <div class="container">
+      <div class="articles-slider-wrapper">
+        <div class="articles__slider-container swiper-container">
+          <div class="articles__slider-wrapper swiper-wrapper">
+            <!-- Slides -->
+            <div class="articles__slider-slide swiper-slide">
+              <img src="img/slider-articles-img-1.jpg" alt="Photo" class="articles__slider-img">
+            </div>
+            <div class="articles__slider-slide swiper-slide">
+              <img src="img/slider-articles-img-2.jpg" alt="Photo" class="articles__slider-img">
+            </div>
+            <div class="articles__slider-slide swiper-slide">
+              <img src="img/slider-articles-img-3.jpg" alt="Photo" class="articles__slider-img">
+            </div>
+            <div class="articles__slider-slide swiper-slide">
+              <img src="img/slider-articles-img-4.jpg" alt="Photo" class="articles__slider-img">
+            </div>
+            <div class="articles__slider-slide swiper-slide">
+              <img src="img/slider-articles-img-5.jpg" alt="Photo" class="articles__slider-img">
+            </div>
+          </div>
+          
+          <!-- If we need pagination -->
+          <div class="articles__slider-pagination swiper-pagination">
+          </div>
+          
+          <div class="articles__slider-overlay slider-overlay">
+            <div class="slider-overlay__author">
+              <img src="img/slider-overlay-avatar.jpg" alt="Sarah Jenkins" class="slider-overlay__avatar">
+              <span class="slider-overlay__name">By Sarah Jenkins</span>
+              <span class="slider-overlay__profession">Photographer</span>
+            </div>
+            <!-- /.slider-overlay__aythor -->
+            <h3 class="slider-overlay__title"><a href="#" class="link">Readers' Choice winners: Your wine country favorites</a></h3>
+            <button class="slider-overlay__button">
+              <img src="img/icons/slider-overlay-icon.svg" alt="Images icon" class="slider-overlay__icon">
+              <span class="slider-overlay__button-text">Watch photos</span>
+              <span class="slider-overlay__button-count">26</span>
+            </button>
+            <span class="slider-overlay__label">Hot</span>
+          </div>
+          <!-- /.articles__slider-overlay -->
+        </div>
+        <!-- /.articles__slider-container -->
+        <div class="articles-slider__item articles-slider__item--horizontal horizontal-slider-card">
+          <div class="horizontal-slider-card__content">
+            <span class="horizontal-slider-card__category horizontal-slider-card__category--careers">Careers</span>
+            <h4 class="horizontal-slider-card__title"><a href="#" class="link">Had a Job Interview but No Callback? Here’s What to Do</a></h4>
+            <p class="horizontal-slider-card__text">Try to understand the culture of the company where you want to work and be authentic in your interview, experts emphasize</p>
+            <a href="#" class="horizontal-slider-card__button read-more-button">Read more
+                <img src="img/icons/arrow-right.svg" alt="Arrow right" class="read-more-button__arrow">
+            </a>
+            <img src="img/slider-card-bg.png" alt="Office woman" class="horizontal-slider-card__img">
+          </div>
+          <!-- /.horizontal-slider-card__content -->
+        </div>
+        <!-- /.articles-slider__item articles-slider__item--horizontal -->
+        <div class="articles-slider__item articles-slider__item--common common-card">
+          <h4 class="common-card__title"><a href="" class="link">Is Coffee Bad for Bones?</a></h4>
+          <p class="common-card__text common-card__text--mb-0">Coffee drinkers may excrete more calcium, but it doesn’t appear to weaken bones</p>
+          <span class="common-card__date">Oct 15</span>
+        </div>
+        <!-- /.articles-slider__item articles-slider__item--common common-card -->
+        <div class="articles-slider__item articles-slider__item--common common-card">
+          <h4 class="common-card__title"><a href="#" class="link">What We Manufacture</a></h4>
+          <p class="common-card__text common-card__text--mb-0">A global history of the factory and the modern world that all should read</p>
+          <span class="common-card__date">Oct 14</span>
+        </div>
+        <!-- /.articles-slider__item articles-slider__item--common common-card -->
+      </div>
+      <!-- /.articles-slider-wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
   
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/parallax.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -23,4 +23,22 @@ $(document).ready(function () {
     $(this).toggleClass('categories-cards__flag--checked');
    })
 
+   var mySwiper = new Swiper('.articles__slider-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    speed: 700,
+    effect: 'slide',
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+  })
+
 });
