@@ -155,4 +155,35 @@
         align-items: flex-start
       &__image
         display: block
+  .articles
+    &-slider
+      &-wrapper
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(3, min-content)
+        grid-gap: 25px
+      &__item
+        &--horizontal
+          grid-column: 1 / 3
+          grid-row: 2
+          padding: 30px 0 30px 30px
+    &__slider
+      &-container
+        grid-column: 1 / 3
+        grid-row: 1
+        max-height: 500px
+  .horizontal
+    &-slider
+      &-card
+        &__content
+          max-width: 500px
+        &__title
+          margin: 10px 0 15px
+        &__text
+          max-width: 450px
+          margin-bottom: 30px
+        &__img
+          bottom: -90px
+
+
+    
       

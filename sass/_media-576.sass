@@ -102,6 +102,7 @@
         line-height: 1.8em
   .articles
     &-categories
+      padding: 20px 0
       &-wrapper
         grid-template-columns: repeat(2, 1fr)
         grid-gap: 15px
@@ -140,3 +141,49 @@
       &__title
         font-size: 14px
         margin-bottom: 15px
+  .articles
+    &-slider
+      padding: 30px 0
+      &-wrapper
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(4, min-content)
+        grid-gap: 15px
+      &__item
+        &--horizontal
+          grid-column: 1 / 2
+          grid-row: 2
+          padding: 15px 0 15px 15px
+        &--common
+          padding: 15px 15px 20px 15px
+    &__slider
+      &-container
+        grid-column: 1 / 2
+        grid-row: 1
+        height: 400px
+      &-overlay
+        padding: 20px
+  .horizontal
+    &-slider
+      &-card
+        &__content
+          max-width: 95%
+          &::before
+            right: -65px
+            top: 175px
+        &__title
+          position: relative
+        &__text
+          position: relative
+          max-width: 80%
+        &__button
+          position: relative
+        &__img
+          bottom: -228px
+  .slider
+    &-overlay
+      &__author
+        margin-bottom: 25px
+      &__title
+        font-size: 25px
+        line-height: 37px
+        margin-bottom: 30px
