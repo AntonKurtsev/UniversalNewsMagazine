@@ -17,10 +17,8 @@ $(document).ready(function () {
 
   $(".fancybox").fancybox();
 
-  $('.parallax-window').parallax({imageSrc: 'img/parallax-bg.jpg'});
-
-  $('.categories-cards__flag').on('click', function () { 
-    $(this).toggleClass('categories-cards__flag--checked');
+  $('.flag-icon').on('click', function () { 
+    $(this).toggleClass('flag-icon--checked');
    })
 
   $('.like-icon').on('click', function () { 
@@ -62,5 +60,7 @@ $(document).ready(function () {
       },
     });
   });
+
+  $('.parallax-window').parallax({imageSrc: 'img/parallax-bg.jpg'});
 
 });
