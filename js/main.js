@@ -23,6 +23,10 @@ $(document).ready(function () {
     $(this).toggleClass('categories-cards__flag--checked');
    })
 
+   $('.like-icon').on('click', function () { 
+    $(this).toggleClass('like-icon--checked');
+   })
+
    var mySwiper = new Swiper('.articles__slider-container', {
     // Optional parameters
     direction: 'horizontal',

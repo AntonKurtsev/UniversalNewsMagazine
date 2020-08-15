@@ -26,6 +26,7 @@ body
     min-height: 270px
     background: transparent
 .link
+  display: block
   color: inherit
   text-decoration-color: transparent
   transition: all 0.2s
@@ -41,10 +42,18 @@ body
   &-icon
     width: 15px
     height: 15px
+    cursor: pointer
+    &:hover
+      fill: #4592FF
 .like
   &-icon
     width: 15px
     height: 15px
+    cursor: pointer
+    &:hover
+      fill: #FF4F52
+    &--checked
+      fill: #FF4F52!important
 .comment,
 .like
   &-block
