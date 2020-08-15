@@ -23,11 +23,11 @@ $(document).ready(function () {
     $(this).toggleClass('categories-cards__flag--checked');
    })
 
-   $('.like-icon').on('click', function () { 
+  $('.like-icon').on('click', function () { 
     $(this).toggleClass('like-icon--checked');
-   })
+  })
 
-   var mySwiper = new Swiper('.articles__slider-container', {
+  var mySwiper = new Swiper('.articles__slider-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -44,5 +44,23 @@ $(document).ready(function () {
     },
   
   })
+
+  $('.form').each(function(){
+    $(this).validate({
+      errorClass: "invalid",
+      rules: {
+        newsletter__email: {
+          required: true,
+          email: true,
+        },
+      },
+      messages: {
+        newsletter__email: {
+          required: "Please specify your email address",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+      },
+    });
+  });
 
 });

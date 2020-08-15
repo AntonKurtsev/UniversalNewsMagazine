@@ -903,9 +903,15 @@
   <div class="newsletter">
     <div class="container">
       <h3 class="newsletter__title">Subscribe now and get 20%&nbsp;off</h3>
-      <form action="send.php" method="POST" class="newsletter__form">
-        <input type="email" class="newsletter__input" placeholder="Enter your email">
+      <form action="send.php" method="POST" class="newsletter__form form">
         <button class="newsletter__button subscribe-button" type="submit">Subscribe</button>
+        <input 
+          type="email" 
+          class="newsletter__input input" 
+          placeholder="Enter your email"
+          name="newsletter__email"
+          required
+        >
       </form>
     </div>
     <!-- /.container -->
@@ -916,6 +922,7 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
