@@ -145,20 +145,22 @@
     &-slider
       padding: 30px 0
       &-wrapper
-        grid-template-columns: 1fr
-        grid-template-rows: repeat(4, min-content)
-        grid-gap: 15px
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        grid-gap: 0
       &__item
         &--horizontal
-          grid-column: 1 / 2
-          grid-row: 2
+          margin-bottom: 15px
           padding: 15px 0 15px 15px
         &--common
           padding: 15px 15px 20px 15px
+          margin-bottom: 15px
+          &:last-child
+            margin-bottom: 0
     &__slider
       &-container
-        grid-column: 1 / 2
-        grid-row: 1
+        margin-bottom: 15px
         height: 400px
       &-overlay
         padding: 20px
@@ -174,7 +176,7 @@
           position: relative
         &__text
           position: relative
-          max-width: 80%
+          max-width: 77%
         &__button
           position: relative
         &__img
