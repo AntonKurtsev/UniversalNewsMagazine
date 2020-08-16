@@ -1,6 +1,9 @@
 @media (max-width: 576px)
   .container
     max-width: 100%
+  .article
+    &-container
+      max-width: 100%
   .header
     &__logo
       width: 120px
@@ -236,3 +239,31 @@
     &-round
       width: 40px
       height: 40px
+  .sample
+    &-header
+      &__bg
+        height: 410px
+      &__overlay
+        padding: 25px 0
+      &-nav
+        &__text
+          display: none
+      &__title
+        font-size: 25px
+        line-height: 30px
+      &__descr
+        margin-top: 20px
+        font-size: 14px
+        line-height: 20px
+      &__bottom
+        flex-wrap: wrap
+      &__share
+        flex-basis: 60%
+        flex-shrink: 0
+        margin-top: 10px
+  .back
+    &-to
+      &-home
+        &-button
+          &__text
+            display: none

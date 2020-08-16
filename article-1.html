@@ -144,13 +144,15 @@
     <!-- /.header__bottom -->
   </header>
 
-  <article class="sample">
+  <div class="sample">
 
     <div class="sample__header sample-header">
       <img src="img/article-sample-bg.jpg" alt="Article photo" class="sample-header__bg">
       <div class="container">
         <div class="sample-header__overlay">
-          <div class="sample-container">
+      
+          <div class="article-container article-container--flex">
+            
             <svg class="flag-icon icon sample-header__flag">
               <use xlink:href="img/icons/sprite.svg#flag-icon"></use>
             </svg>
@@ -177,7 +179,7 @@
             <!-- /.sample-header__top -->
 
             <h1 class="sample-header__title">Five Travel Stories From 2017 to Help You Escape Into the World</h1>
-            <p class="sample-header__descr">From the coastlines of Europe to remote Kodiak Island, Alaska, here are five of our favorite stories to help you explore the world</p>
+            <p class="sample-header__descr">From the coastlines of Europe to remote Kodiak Island, Alaska, here are five of&nbsp;our favorite stories to help you explore the world</p>
             
             <div class="sample-header__bottom">
               <div class="sample-header__time">
@@ -210,7 +212,7 @@
             </div>
             <!-- /.sample-header__bottom -->
           </div>
-          <!-- /.sample-container -->
+          <!-- /.article-container -->
           
         </div>
         <!-- /.sample-header__overlay -->
@@ -219,8 +221,36 @@
       <!-- /.container -->
     </div>
     <!-- /.sample__header sample-header -->
+  </div>
+    <!-- <div class="author-card">
+      <img src="img/author-card-avatar.jpg" alt="Mira Anderson" class="author-card__avatar">
+      <span class="author-card__name">Mira Anderson</span>
+      <span class="author-card__profession">Traveler & Photographer</span>
+      <span class="author-card__articles">82 articles</span>
+      <div class="author-card__social card-social">
+        <a href="https://facebook.com" target="_blank" class="card-social__link">
+          <svg class="icon card-social__icon card-social__icon--fb">
+            <use xlink:href="img/icons/sprite.svg#fb-icon"></use>
+          </svg>
+        </a>
+        <a href="https://twitter.com/" target="_blank" class="card-social__link">
+          <svg class="icon card-social__icon card-social__icon--twitter">
+            <use xlink:href="img/icons/sprite.svg#twitter-icon"></use>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="card-social__link">
+          <svg class="icon card-social__icon card-social__icon--inst">
+            <use xlink:href="img/icons/sprite.svg#inst-icon"></use>
+          </svg>
+        </a>
+      </div> -->
+      <!-- /.author-card__social card-social -->
+      <!-- <a href="#" class="author-card__follow link">Follow on Universal</a>
+    </div> -->
+    <!-- /.author-card -->
 
-  </article>
+    
+  
 
   <div class="newsletter">
     <div class="container">
@@ -396,6 +426,7 @@
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/parallax.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 </body>
