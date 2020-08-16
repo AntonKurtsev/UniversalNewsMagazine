@@ -13,7 +13,14 @@ if ($email = $_POST['newsletter__email']) {
   ";
 
   $header = 'location: thankyouforsubscribe.html'; 
-} 
+} elseif ($comment = $_POST["add_comment"]) {
+  $title = "Новый комментарий от подписчика Universal News Magazine";
+  $body = "
+  <h2>Новый комментарий</h2>
+  <b>Текст комментария:</b> $comment
+  ";
+  $header = 'location: thankyouforcomment.html';
+}
   
   // Настройки PHPMailer
   $mail = new PHPMailer\PHPMailer\PHPMailer();
