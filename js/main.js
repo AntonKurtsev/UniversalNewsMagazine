@@ -25,7 +25,7 @@ $(document).ready(function () {
     $(this).toggleClass('like-icon--checked');
   })
 
-  var mySwiper = new Swiper('.articles__slider-container', {
+  var mainSlider = new Swiper('.articles__slider-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -42,6 +42,7 @@ $(document).ready(function () {
     },
   
   })
+
 
   $('.form').each(function(){
     $(this).validate({
