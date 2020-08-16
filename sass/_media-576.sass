@@ -293,6 +293,8 @@
     &__avatar
       margin-bottom: 0
       margin-right: 15px
+    &__icon
+      left: 10px
   .tags
     &-wrapper
       padding-bottom: 10px
@@ -308,4 +310,28 @@
     &__card
       flex-basis: 100%
       max-width: 100%
+  .add
+    &-comment
+      &__title
+        margin: 0 0 15px 0
+      &-inner
+        flex-direction: column
+      &__avatar
+        width: 60px
+        height: 60px
+        margin: 0 0 25px 0
+      &__form
+        width: 100%
+        &::after
+          left: 20px
+          top: -17px
+          border: 10px solid transparent
+          border-bottom: 10px solid #ffffff
+        &::before
+          left: 20px
+          top: -19px
+          border: 10px solid transparent
+          border-bottom: 10px solid #D9DADB
+      &__textarea
+        max-width: 100%
     
