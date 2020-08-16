@@ -331,13 +331,13 @@
   </div>
   <!-- /.quote -->
 
-  <article class="article article-bottom">
+  <div class="article article-bottom">
     <div class="article-container">
       <p class="article__paragraph">The Greeks, who were the first to explore geography as both art and science, achieved this through Cartography, Philosophy, and Literature, or through Mathematics. There is some debate about who was the first person to assert that the Earth is spherical in shape, with the credit going either to Parmenides or Pythagoras. Anaxagoras was able to demonstrate that the profile of the Earth was circular by explaining eclipses. However, he still believed that the Earth was a flat disk, as did many of his contemporaries.</p>
       <p class="article__paragraph">The first rigorous system of latitude and longitude lines is credited to Hipparchus. He employed a sexagesimal system that was derived from Babylonian mathematics.</p>
     </div>
     <!-- /.article-container -->
-  </article>
+  </div>
   <!-- /.article article-bottom -->
 
   <div class="article-tags">
@@ -492,6 +492,36 @@
     <!-- /.container -->
   </section>
   <!-- /.additional -->
+
+  <section class="add-comment">
+    <div class="article-container">
+      <div class="comment-container">
+        <div class="add-comment-wrapper">
+          <h4 class="add-comment__title">What do you think?</h4>
+          <div class="add-comment-inner">
+            <img src="img/add-comment-avatar.jpg" alt="Avatar" class="add-comment__avatar">
+            <form action="send.php" method="POST" class="add-comment__form form">
+              <textarea 
+                class="add-comment__textarea" 
+                name="add_comment"
+                type="text"
+                required
+                minlength="100">
+              </textarea>
+              <button class="add-comment__button" type="submit">Submit
+                <img src="img/icons/arrow-right.svg" alt="arrow-right" class="add-comment__arrow">
+              </button>
+            </form>
+          </div>
+          <!-- /.add-comment-inner -->
+        </div>
+        <!-- /.add-comment-wrapper -->
+      </div>
+      <!-- /.comment-container -->
+    </div>
+    <!-- /.article-container -->
+  </section>
+  <!-- /.add-comment -->
 
   <div class="newsletter">
     <div class="container">

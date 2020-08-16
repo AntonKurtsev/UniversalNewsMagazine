@@ -1,0 +1,72 @@
+.add
+  &-comment
+    background-color: #ffffff
+    padding: 30px 0 30px
+    &-wrapper
+      background-color: #F5F5F5
+      border-radius: 10px
+      padding: 30px 40px 35px 30px
+    &__title
+      margin: 0
+      margin-bottom: 15px
+      margin-left: 96px
+      font-family: Roboto Slab
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: #262D33
+    &-inner
+      display: flex
+      align-items: flex-start
+      flex-wrap: nowrap
+    &__avatar
+      margin-right: 20px
+      width: 75px
+      height: 75px
+      object-fit: cover
+      border-radius: 50%
+      overflow: hidden
+    &__form
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      &::before
+        content: ''
+        position: absolute
+        left: -20px
+        top: 25px
+        border: 10px solid transparent
+        border-right: 10px solid #D9DADB
+      &::after
+        content: ''
+        position: absolute
+        left: -18px
+        top: 25px
+        border: 10px solid transparent
+        border-right: 10px solid #ffffff
+    &__textarea
+      width: 585px
+      height: 130px
+      padding: 10px
+      outline: none
+      border: 1px solid #D9DADB
+      border-radius: 10px
+      resize: none
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+    &__button
+      margin-top: 15px
+      border: none
+      outline: none
+      cursor: pointer
+      padding: 10px 20px 10px 25px
+      border-radius: 20px
+      background-color: #4592FF
+      color: #ffffff
+    &__arrow
+      margin-left: 5px

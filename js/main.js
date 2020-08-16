@@ -52,11 +52,19 @@ $(document).ready(function () {
           required: true,
           email: true,
         },
+
+        add_comment: {
+          required: true,
+          minlength: 100,
+        },
       },
       messages: {
         newsletter__email: {
           required: "Please specify your email address",
           email: "Your email address must be in the format of name@domain.com"
+        },
+        add_comment: {
+          minlength: "Please use at least 100 symbols"
         },
       },
     });
