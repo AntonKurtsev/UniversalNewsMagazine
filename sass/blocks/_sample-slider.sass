@@ -1,0 +1,74 @@
+.slider
+  &-block
+    background-color: #ffffff
+    padding-top: 15px
+    &-wrapper
+      border: 1px solid #D9DADB
+      border-radius: 10px
+      overflow: hidden
+    &__bottom
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding-left: 35px
+    &__descr
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+    &__author
+      display: flex
+      align-items: center
+      padding: 12px 35px 13px 30px
+      border-left: 1px solid #D9DADB
+    &__avatar
+      margin-right: 10px
+      width: 45px
+      height: 45px
+      border-radius: 50%
+      object-fit: cover
+      overflow: hidden
+    &__info 
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      min-width: 142px
+    &__name
+      margin-bottom: 2px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+    &__profession
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+.sample
+  &-slider
+    position: relative
+    height: 555px
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      background-color: transparent
+      z-index: 5
+      cursor: pointer
+      border: none
+      outline: none
+      &--prev
+        left: 35px
+      &--next
+        right: 35px
+    &__icon
+      width: 60px
+      height: 60px
+      fill: rgba(255, 255, 255, 0.4)

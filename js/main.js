@@ -43,6 +43,24 @@ $(document).ready(function () {
   
   })
 
+  var sampleSlider = new Swiper('.sample-slider', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.sample-slider__button--next',
+      prevEl: '.sample-slider__button--prev',
+    },
+    speed: 1000,
+    effect: 'slide',
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+    },
+  })
+
 
   $('.form').each(function(){
     $(this).validate({
