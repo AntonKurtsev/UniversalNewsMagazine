@@ -37,6 +37,10 @@
       border-top: 1px solid #D9DADB
       &--answer
         padding-left: 90px
+    &-hide
+      display: none
+      &--active
+        display: block
     &__load
       &-more
         width: 100%
@@ -66,7 +70,7 @@
       margin-bottom: 10px
     &__avatar
       margin-right: 15px
-      min-width: 75px
+      width: 75px
       height: 75px
       border-radius: 50%
       object-fit: cover
@@ -148,11 +152,15 @@
       width: 15px
       height: 15px
       fill: #BCBFC2
+      &--hide
+        display: none
     &__text
       font-family: 'Lato', sans-serif
       font-size: 14px
       font-weight: 700
       line-height: 20px
       color: #262D33
+      &--hide
+        display: none
 
   
