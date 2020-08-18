@@ -1,8 +1,11 @@
 $(document).ready(function () {
+
   $('.sections__menu-button').on('click', function (event) {
     $('.header-menu').slideToggle(500);
     $('.header-menu__list').toggleClass('header-menu__list--mobile-visible');
   })
+
+  $('.lazy').Lazy();
 
   var tabsItem = $('.tabs-menu__item');
   var tabsContent = $('.recomended__tabs-content');
