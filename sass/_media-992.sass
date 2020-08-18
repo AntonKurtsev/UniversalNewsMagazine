@@ -7,11 +7,11 @@
   .comment
     &-icon
       &:hover
-        fill: inherit
+        // fill: rgba(255, 255, 255, 0.4)!important
   .like
     &-icon
       &:hover
-        fill: inherit
+        fill: rgba(255, 255, 255, 0.4)!important
   .flag
     &-icon
       &--checked
@@ -123,6 +123,11 @@
           grid-column: 2 / 3
           grid-row: 4 / 5
           grid-template-rows: repeat(4, 1fr)
+  .horizontal
+    &-comments
+      &__icon
+        &:hover
+          fill: #BCBFC2
   .vertical
     &-bg
       &-card
@@ -142,6 +147,11 @@
           padding-bottom: 5px
           padding-right: 10px
           padding-left: 10px
+  .card
+    &-author
+      &__message
+        &:hover
+          fill: rgba(255,255,255,0.4)
   .columns
     grid-column: 3 / 4
     grid-row: 1 / 5
@@ -163,6 +173,12 @@
         margin-bottom: 10px
       &__img
         width: 410px
+      &__like
+        &:hover
+          fill: #BCBFC2!important
+      &__message
+        &:hover
+          fill: #BCBFC2
       &__flag
         top: 233px
     &-recomended
@@ -233,6 +249,21 @@
         max-width: 100%
         font-size: 16px
         line-height: 26px
+      &__button
+        &:hover
+          color: #ffffff
+          fill: #ffffff
+      &-nav
+        &__text
+          &:hover
+            color: #ffffff
+      &__message
+        &:hover
+          fill: rgba(255,255,255,0.4)
+      &__share
+        &:hover
+          background-color: transparent
+          border: 1px solid rgba(255, 255, 255, 0.4)
   .article
     &-top
       padding-top: 40px
@@ -267,10 +298,18 @@
       &__link
         width: 35px
         height: 35px
+        &:hover
+          border: 1px solid #D9DADB
+      &__icon
+        &:hover
+          fill: #D9DADB
   .material
     &-card
       right: -50px
       width: 190px
+      &__message
+        &:hover
+          fill: #BCBFC2
   .quote
     &__text
       max-width: 375px
@@ -278,6 +317,10 @@
       line-height: 27px
   .additional
     padding-bottom: 60px
+    &-card
+      &__message
+        &:hover
+          fill: #BCBFC2
   .add
     &-comment
       &__textarea
@@ -303,6 +346,11 @@
         max-width: 405px
         font-size: 16px
         line-height: 24px
+  .reply
+    &-block
+      &__message
+        &:hover
+          fill: #BCBFC2
 
           
 
