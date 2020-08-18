@@ -110,7 +110,7 @@ $(document).ready(function () {
   $('.parallax-window').parallax({imageSrc: 'img/parallax-bg.jpg'});
 
   $('.load-more').on('click', function() {
-    $('.article-comments-hide').toggleClass('article-comments-hide-active').slideToggle(500);
+    $('.article-comments-hide').slideToggle(500);
     $('.load-more__text').toggleClass('load-more__text--hide');
     $('.load-more__icon').toggleClass('load-more__icon--hide');
   })
