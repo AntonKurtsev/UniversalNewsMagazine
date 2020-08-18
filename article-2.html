@@ -271,15 +271,33 @@
         <div class="swiper-container sample-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img data-src="img/sample-slider-bg-1.jpg" class="lazy sample-slider__image" alt="Slider photo">
+              <picture>
+                <source
+                srcset="img/sample-slider-bg-1-992px.jpg" media="(max-width: 992px)"
+                srcset="img/sample-slider-bg-1-768px.jpg" media="(max-width: 768px)"
+                srcset="img/sample-slider-bg-1-576px.jpg" media="(max-width: 576px)">
+                <img data-src="img/sample-slider-bg-1.jpg" class="lazy sample-slider__image" alt="Slider photo">
+              </picture>
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img data-src="img/sample-slider-bg-2.jpg" class="lazy sample-slider__image" alt="Slider photo">
+              <picture>
+                <source
+                srcset="img/sample-slider-bg-3-992px.jpg" media="(max-width: 992px)"
+                srcset="img/sample-slider-bg-3-768px.jpg" media="(max-width: 768px)"
+                srcset="img/sample-slider-bg-3-576px.jpg" media="(max-width: 576px)">
+                <img data-src="img/sample-slider-bg-3.jpg" class="lazy sample-slider__image" alt="Slider photo">
+              </picture>
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide">
-              <img src="img/sample-slider-bg-3.jpg" class="sample-slider__image" alt="Slider photo">
+              <picture>
+                <source
+                srcset="img/sample-slider-bg-3-992px.jpg" media="(max-width: 992px)"
+                srcset="img/sample-slider-bg-3-768px.jpg" media="(max-width: 768px)"
+                srcset="img/sample-slider-bg-3-576px.jpg" media="(max-width: 576px)">
+                <img data-src="img/sample-slider-bg-3.jpg" class="lazy sample-slider__image" alt="Slider photo">
+              </picture>
             </div>
             <!-- /.swiper-slide -->
           </div>
@@ -1010,6 +1028,6 @@
   <script src="js/parallax.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.lazy.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>
