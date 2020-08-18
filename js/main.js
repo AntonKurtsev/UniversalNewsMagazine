@@ -25,6 +25,25 @@ $(document).ready(function () {
     $(this).toggleClass('like-icon--checked');
   })
 
+  $('.categories-cards__item').hover(function () { 
+    $(this).toggleClass('categories-cards__item--active');
+    $(this).find('.link').toggleClass('link--active');
+    $(this).find('.categories-cards__image').toggleClass('categories-cards__image--active');
+  });
+
+  $('.categories-cards__item').on('click', function () {
+    document.location.href='article-1.html';
+  })
+
+  $('.article-card').hover(function () { 
+    $(this).toggleClass('article-card--active');
+    $(this).find('.link').toggleClass('link--active');
+  });
+  
+  $('.article-card').on('click', function () {
+    document.location.href='article-1.html';
+  })
+
   var mainSlider = new Swiper('.articles__slider-container', {
     // Optional parameters
     direction: 'horizontal',

@@ -20,10 +20,16 @@
       align-items: flex-start
       flex-wrap: nowrap
       border-bottom: 1px solid #D9DADB
+      transition: all 0.3s
       &:last-child
         border-bottom: none
+      &--active
+        cursor: pointer
     &__image
       margin-right: 25px
+      transition: all 0.3s
+      &--active
+        transform: scale(1.02)
     &__img
       width: 336px
       height: 195px
