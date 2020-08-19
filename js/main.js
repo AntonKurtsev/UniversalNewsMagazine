@@ -34,7 +34,11 @@ $(document).ready(function () {
     $(this).find('.categories-cards__image').toggleClass('categories-cards__image--active');
   });
 
-  $('.categories-cards__item').on('click', function () {
+  $('.categories-cards__image').on('click', function () {
+    document.location.href='article-1.html';
+  })
+
+  $('.categories-cards__text').on('click', function () {
     document.location.href='article-1.html';
   })
 
