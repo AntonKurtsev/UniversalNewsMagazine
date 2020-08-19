@@ -60,6 +60,15 @@ $(document).ready(function () {
     document.location.href='article-1.html';
   })
 
+  $('.vertical-bg-card__content').hover(function () { 
+    $('.vertical-bg-card').toggleClass('article-card--active');
+    $(this).find('.link').toggleClass('link--active');
+  });
+  
+  $('.vertical-bg-card__content').on('click', function () {
+    document.location.href='article-1.html';
+  })
+
   $('.vertical-half-card').hover(function () { 
     $(this).toggleClass('article-card--active');
     $(this).find('.link').toggleClass('link--active');
