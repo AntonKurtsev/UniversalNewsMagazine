@@ -146,7 +146,12 @@
 
   <section class="sample">
     <div class="sample__header sample-header">
-      <img src="img/article-sample-bg-2.jpg" alt="Article photo" class="sample-header__bg">
+      <picture>
+        <source srcset="img/article-sample-bg-2-576px.webp" media="(max-width: 576px)" type="image/webp">
+        <source srcset="img/article-sample-bg-2-576px.jpg" media="(max-width: 576px)" type="image/jpg">
+        <source srcset="img/article-sample-bg-2.webp" type="image/webp">
+        <img src="img/article-sample-bg-2.jpg" alt="Article photo" class="sample-header__bg">
+      </picture>
       <div class="container">
         <div class="sample-header__overlay">
       
