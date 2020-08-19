@@ -42,12 +42,21 @@ $(document).ready(function () {
     document.location.href='article-1.html';
   })
 
-  $('.article-card').hover(function () { 
+  $('.common-card').hover(function () { 
     $(this).toggleClass('article-card--active');
     $(this).find('.link').toggleClass('link--active');
   });
   
-  $('.article-card').on('click', function () {
+  $('.common-card').on('click', function () {
+    document.location.href='article-1.html';
+  })
+
+  $('.vertical-half-card').hover(function () { 
+    $(this).toggleClass('article-card--active');
+    $(this).find('.link').toggleClass('link--active');
+  });
+  
+  $('.vertical-half-card').on('click', function () {
     document.location.href='article-1.html';
   })
 
