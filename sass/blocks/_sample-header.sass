@@ -59,8 +59,18 @@
         align-items: center
         text-decoration: none
         color: #ffffff
+        transition: all 0.2s
+        &:hover
+          color: #4592FF
+        &:hover .nav-icon
+          fill: #4592FF
         &--prev
           margin-right: 20px
+      &__icon
+        width: 20px
+        height: 20px
+        fill: #ffffff
+        transition: all 0.2s
       &__text
         font-size: 14px
         font-weight: 700
@@ -69,8 +79,6 @@
           margin-left: 5px
         &--next
           margin-right: 5px
-        &:hover
-          color: #4592FF
     &__title
       margin: 0
       margin-top: 50px
@@ -153,6 +161,9 @@
       width: 30px
       height: 30px
       fill: rgba(255, 255, 255, 0.4)
+      transition: all 0.3s
+      &:hover
+        fill: #FF4F52
 .back-to-home-button__text
       font-size: 14px
       font-weight: 700
