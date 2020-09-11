@@ -5,8 +5,6 @@ $(document).ready(function () {
     $('.header-menu__list').toggleClass('header-menu__list--mobile-visible');
   })
 
-  $('.lazy').Lazy();
-
   var tabsItem = $('.tabs-menu__item');
   var tabsContent = $('.recomended__tabs-content');
 
