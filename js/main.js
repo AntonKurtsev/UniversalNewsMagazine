@@ -20,7 +20,7 @@ $(document).ready(function () {
 
   $('.flag-icon').on('click', function () { 
     $(this).toggleClass('flag-icon--checked');
-   })
+  })
 
   $('.like-icon').on('click', function () { 
     $(this).toggleClass('like-icon--checked');
